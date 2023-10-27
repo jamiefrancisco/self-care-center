@@ -8,7 +8,7 @@ var meditateLogo = document.querySelector('img');
 var mantras = [];
 var affirmations = [];
 
-receiveMessageButton.addEventListener('click', function (event) {
+receiveMessageButton.addEventListener('click', function(event) {
     event.preventDefault();
     if (affirmationSelection.checked) {
         show(affirmationMessage);

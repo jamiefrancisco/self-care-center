@@ -12,48 +12,57 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
-    
+}
 
-}
 p {
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif;
 }
-div {
-    
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.header-wrapper {
+    margin-bottom: 5px;
 }
 
 .header {
     color: white;
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif;
+    font-size: 27px;
     display: flex;
     justify-content: center;
     margin-top: auto;
-    padding-top: 34px;
+    padding-top: 42px;
     
 }
 
 .sub-header {
     color: white;
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     padding-top: 64px;
     margin-bottom: 8px;
 }
+
 .message-result {
     display: flex;
     justify-content: center;
     background-color: white;
     padding: 3%;
-    margin: 7.5% 20%;
+    margin-top: 100px;
     border-radius: 8px;
-    
+    width: 55%;
    
 }
+
 .meditate-logo {
     height: 65px;
-    
-    
+    width: auto;
 }
 
 .aff-or-man {
@@ -62,31 +71,36 @@ div {
     justify-content: space-around;
     padding: 13px;
 }
+
 .aff-radio {
     
 }
+
 .form {
     background-color: white;
-    font-family: "Quicksand", sans-serif;
+    font-family: 'Quicksand', sans-serif;
     display: flex;
     flex-direction: column;
-    margin: 0% 30%;
     border-radius: 8px;
-   
-   
+    margin: auto;
+    width: 40%;
 }
+
 .receive-message-button-box {
     display: flex;
     justify-content: center;  
-    padding: 8px;
+    padding: 8px; 
 }
+
 .receive-message-button {
     background-color: #134d71;
     color: white ;
-    font-family: "Quicksand";
-    padding: 3px 25px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    padding: 2.5px 22px;
     border-radius: 4px;
 }
+
 .hidden {
     display: none;
 }
