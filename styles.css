@@ -11,6 +11,9 @@ html, body {
     background: linear-gradient(to top,#f7e4bf, #78a7c6, #134d71);
     background-repeat: no-repeat;
     background-size: cover;
+    margin: auto;
+    
+
 }
 
 div {
@@ -22,6 +25,9 @@ div {
     font-family: 'Quicksand';
     display: flex;
     justify-content: center;
+    margin-top: auto;
+    padding-top: 34px;
+    
 }
 
 .sub-header {
@@ -29,14 +35,15 @@ div {
     font-family: 'Quicksand';
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 64px;
+    margin-bottom: 8px;
 }
 .message-result {
     display: flex;
     justify-content: center;
     background-color: white;
     padding: 3%;
-    margin: 8% 20%;
+    margin: 7.5% 20%;
     border-radius: 8px;
     
    
@@ -51,7 +58,7 @@ div {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 8px;
+    padding: 13px;
 }
 .aff-radio {
     
@@ -69,7 +76,7 @@ div {
 .receive-message-button-box {
     display: flex;
     justify-content: center;  
-    padding: 3px;
+    padding: 8px;
 }
 .receive-message-button {
     background-color: #134d71;
