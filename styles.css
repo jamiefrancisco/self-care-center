@@ -6,9 +6,10 @@ dark-blue - #134d71;
 white - #ffffff;
 black - #000000;
 */
-html, body {
+html,
+body {
     height: 100%;
-    background: linear-gradient(to top,#f7e4bf, #78a7c6, #134d71);
+    background: linear-gradient(to top, #f7e4bf, #78a7c6, #134d71);
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
@@ -21,7 +22,7 @@ p {
 .content-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 
 .header-wrapper {
@@ -36,7 +37,7 @@ p {
     justify-content: center;
     margin-top: auto;
     padding-top: 42px;
-    
+
 }
 
 .sub-header {
@@ -57,7 +58,7 @@ p {
     margin-top: 100px;
     border-radius: 8px;
     width: 55%;
-   
+
 }
 
 .meditate-logo {
@@ -72,10 +73,6 @@ p {
     padding: 13px;
 }
 
-.aff-radio {
-    
-}
-
 .form {
     background-color: white;
     font-family: 'Quicksand', sans-serif;
@@ -88,13 +85,13 @@ p {
 
 .receive-message-button-box {
     display: flex;
-    justify-content: center;  
-    padding: 8px; 
+    justify-content: center;
+    padding: 8px;
 }
 
 .receive-message-button {
     background-color: #134d71;
-    color: white ;
+    color: white;
     font-family: 'Quicksand', sans-serif;
     font-size: 15px;
     padding: 2.5px 22px;
@@ -103,4 +100,36 @@ p {
 
 .hidden {
     display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .content-wrapper {
+        width: 100%;
+    }
+
+    .form {
+        width: 75%;
+    }
+
+    .message-result {
+        width: 85%;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (orientation: landscape) {
+
+    .content-wrapper {
+        width: 100%;
+        padding: 10px;
+
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .message-result {
+        width: 100%;
+    }
 }
