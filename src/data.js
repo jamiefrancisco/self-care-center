@@ -31,5 +31,3 @@ var mantras = [
     'Onward and upward.',
     'I am the sky, the rest is weather.'
 ]
-
-console.log(mantras[1]);

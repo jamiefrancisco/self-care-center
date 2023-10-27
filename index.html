@@ -17,11 +17,11 @@
   <form class="form">
     <section class="aff-or-man">
       <section class="aff-radio">
-        <input type="radio" id="affirmation"> 
+        <input type="radio" name="choice" id="affirmation" value="affirmation"> 
         <label for="affirmation"> <em>affirmation</em> </label>
       </section>
       <section class="man-radio">
-        <input type="radio" id="mantra">
+        <input type="radio" name="choice" id="mantra" value="mantra">
         <label for="mantra"> <em>mantra</em> </label>
       </section>
     </section>
@@ -31,11 +31,14 @@
   </form>
   
   <section class="message-result">
+    <p class="mantra-message"></p>
+    <p class="affirmation-message"></p>
     <img class="meditate-logo" src="assets/meditate.svg">
   </section>
 
 </div>
-  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="src/main.js"></script>
+  <script type="text/javascript" src="src/data.js"></script>
 </body>
 
 </html>
