@@ -6,37 +6,75 @@ dark-blue - #134d71;
 white - #ffffff;
 black - #000000;
 */
-h2 {
-    color: white;
-    font-family: 'Quicksand';
-}
-
-h3 {
-    color: white;
-    font-family: 'Quicksand';
-}
-svg {
-    width: 5%;
-    height: 5%;
-    padding: 20px 80px;
-    background-color: white;
-}
-
 html, body {
     height: 100%;
     background: linear-gradient(to top,#f7e4bf, #78a7c6, #134d71);
     background-repeat: no-repeat;
     background-size: cover;
 }
-form {
+
+div {
+    
+}
+
+.header {
+    color: white;
+    font-family: 'Quicksand';
+    display: flex;
+    justify-content: center;
+}
+
+.sub-header {
+    color: white;
+    font-family: 'Quicksand';
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.message-result {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 3%;
+    margin: 8% 20%;
+    border-radius: 8px;
+    
+   
+}
+.meditate-logo {
+    height: 65px;
+    
+    
+}
+
+.aff-or-man {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 8px;
+}
+.aff-radio {
+    
+}
+.form {
     background-color: white;
     font-family: "Quicksand", sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0% 30%;
+    border-radius: 8px;
+   
+   
 }
-button {
+.receive-message-button-box {
+    display: flex;
+    justify-content: center;  
+    padding: 3px;
+}
+.receive-message-button {
     background-color: #134d71;
     color: white ;
     font-family: "Quicksand";
-    padding: 3px 15px;
-    border-radius: 6px;
-    
+    padding: 3px 25px;
+    border-radius: 4px;
 }
