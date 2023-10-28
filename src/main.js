@@ -13,10 +13,14 @@ receiveMessageButton.addEventListener('click', function(event) {
     if (affirmationSelection.checked) {
         show(affirmationMessage);
         hide(mantraMessage);
+        document.body.classList.remove('gradient-reverse');
+        document.body.classList.add('gradient-normal');
         displayRandomAffirmation();
     } else if (mantraSelection.checked) {
         show(mantraMessage);
         hide(affirmationMessage);
+        document.body.classList.remove('gradient-normal');
+        document.body.classList.add('gradient-reverse');
         displayRandomMantra();
     }
     buttonAnimation(); 
@@ -27,7 +31,7 @@ receiveMessageButton.addEventListener('click', function(event) {
 
     setTimeout(function() {
         receiveMessageButton.classList.remove('button-animation');
-    }, 1000);
+    }, 2000);
 }
 
 
@@ -49,8 +53,15 @@ function getRandomIndex(array) {
 
 function show(element) {
     element.classList.remove('hidden');
+    element.animate([
+        { color: 'white'},
+        { color: 'black'}
+    ], {
+        duration: 8000,
+    });
 }
 
 function hide(element) {
     element.classList.add('hidden');
+    element.classList.remove('fade-in');
 }

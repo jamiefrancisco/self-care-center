@@ -15,6 +15,15 @@ body {
     margin: auto;
 }
 
+body.gradient-normal {
+    background: linear-gradient(to top, #f7e4bf, #78a7c6, #134d71);
+}
+
+body.gradient-reverse {
+    background: linear-gradient(to bottom, #f7e4bf, #78a7c6, #134d71);
+}
+
+
 p {
     font-family: 'Quicksand', sans-serif;
 }
@@ -58,7 +67,14 @@ p {
     margin-top: 100px;
     border-radius: 8px;
     width: 55%;
+}
+.fade-in {
+    animation: fadeIn 3s;
+}
 
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .meditate-logo {
@@ -102,25 +118,33 @@ p {
 
 @keyframes button-animation {
     0% {
-        background-color: #134d71;
+        background-color: #f7e4bf;
         transform: translateX(0);
     }
-    25% {
-        background-color: #78a7c6;
-    }
     50% {
-        background-color: #f7e4bf;
-    }
-    75% {
         background-color: #78a7c6;
     }
+
     100% {
         background-color: #134d71;
         transform: translateX(0);
     }
 }
 .button-animation {
-    animation: button-animation 1s linear;
+    animation: button-animation 2s linear;
+}
+
+.receive-message-button:hover {
+    transform: scale(1.2);
+    background-color: #f7e4bf;
+    color: #134d71;
+    
+
+}
+
+input[type=radio]:hover {
+        transform: scale(1.6);
+        color: #134d71;
 }
 
 .hidden {
