@@ -19,7 +19,17 @@ receiveMessageButton.addEventListener('click', function(event) {
         hide(affirmationMessage);
         displayRandomMantra();
     }
-})
+    buttonAnimation(); 
+    })
+
+    function buttonAnimation() {
+    receiveMessageButton.classList.add('button-animation');
+
+    setTimeout(function() {
+        receiveMessageButton.classList.remove('button-animation');
+    }, 1000);
+}
+
 
 function displayRandomAffirmation() {
     hide(meditateLogo);
