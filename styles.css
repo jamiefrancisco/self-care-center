@@ -130,6 +130,14 @@ input[type=radio]:hover {
     width: 55%;
 }
 
+.affirmation-message {
+    text-align: center;
+}
+
+.mantra-message {
+  text-align: center;
+}
+
 .fade-in {
     animation: fadeIn 3s;
 }
