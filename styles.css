@@ -1,11 +1,3 @@
-/* font-family: 'Quicksand', sans-serif;
-COLORS
-light-yellow - #f7e4bf;
-light-blue - #78a7c6;
-dark-blue - #134d71;
-white - #ffffff;
-black - #000000;
-*/
 html,
 body {
     height: 100%;
@@ -23,6 +15,10 @@ body.gradient-reverse {
     background: linear-gradient(to bottom, #f7e4bf, #78a7c6, #134d71);
 }
 
+body.gradient-alternate {
+    background: linear-gradient(to top, #78a7c6, #f7e4bf, #134d71);
+
+}
 
 p {
     font-family: 'Quicksand', sans-serif;
@@ -59,27 +55,14 @@ p {
     margin-bottom: 8px;
 }
 
-.message-result {
-    display: flex;
-    justify-content: center;
+.form {
     background-color: white;
-    padding: 3%;
-    margin-top: 100px;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
     border-radius: 8px;
-    width: 55%;
-}
-.fade-in {
-    animation: fadeIn 3s;
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-.meditate-logo {
-    height: 65px;
-    width: auto;
+    margin: auto;
+    width: 40%;
 }
 
 .aff-or-man {
@@ -89,14 +72,9 @@ p {
     padding: 13px;
 }
 
-.form {
-    background-color: white;
-    font-family: 'Quicksand', sans-serif;
-    display: flex;
-    flex-direction: column;
-    border-radius: 8px;
-    margin: auto;
-    width: 40%;
+input[type=radio]:hover {
+    transform: scale(1.6);
+    color: #134d71;
 }
 
 .receive-message-button-box {
@@ -116,11 +94,22 @@ p {
     transition: background-color;
 }
 
+.receive-message-button:hover {
+    transform: scale(1.2);
+    background-color: #f7e4bf;
+    color: #134d71;
+}
+
+.button-animation {
+    animation: button-animation 2s linear;
+}
+
 @keyframes button-animation {
     0% {
         background-color: #f7e4bf;
         transform: translateX(0);
     }
+
     50% {
         background-color: #78a7c6;
     }
@@ -130,21 +119,34 @@ p {
         transform: translateX(0);
     }
 }
-.button-animation {
-    animation: button-animation 2s linear;
+
+.message-result {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 3%;
+    margin-top: 100px;
+    border-radius: 8px;
+    width: 55%;
 }
 
-.receive-message-button:hover {
-    transform: scale(1.2);
-    background-color: #f7e4bf;
-    color: #134d71;
-    
-
+.fade-in {
+    animation: fadeIn 3s;
 }
 
-input[type=radio]:hover {
-        transform: scale(1.6);
-        color: #134d71;
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.meditate-logo {
+    height: 65px;
+    width: auto;
 }
 
 .hidden {

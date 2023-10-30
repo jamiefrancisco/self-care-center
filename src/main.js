@@ -1,35 +1,37 @@
-var receiveMessageButton = document.querySelector('.receive-message-button');
 var affirmationSelection = document.querySelector('#affirmation');
 var mantraSelection = document.querySelector('#mantra');
+var receiveMessageButton = document.querySelector('.receive-message-button');
+var meditateLogo = document.querySelector('img');
 var affirmationMessage = document.querySelector('.affirmation-message');
 var mantraMessage = document.querySelector('.mantra-message');
-var meditateLogo = document.querySelector('img');
 
 var mantras = [];
 var affirmations = [];
 
-receiveMessageButton.addEventListener('click', function(event) {
+receiveMessageButton.addEventListener('click', function (event) {
     event.preventDefault();
     if (affirmationSelection.checked) {
         show(affirmationMessage);
         hide(mantraMessage);
         document.body.classList.remove('gradient-reverse');
-        document.body.classList.add('gradient-normal');
+        document.body.classList.remove('gradient-normal');
+        document.body.classList.add('gradient-alternate');
         displayRandomAffirmation();
     } else if (mantraSelection.checked) {
         show(mantraMessage);
         hide(affirmationMessage);
         document.body.classList.remove('gradient-normal');
+        document.body.classList.remove('gradient-alternate');
         document.body.classList.add('gradient-reverse');
         displayRandomMantra();
     }
-    buttonAnimation(); 
-    })
+    buttonAnimation();
+})
 
-    function buttonAnimation() {
+function buttonAnimation() {
     receiveMessageButton.classList.add('button-animation');
 
-    setTimeout(function() {
+    setTimeout(function () {
         receiveMessageButton.classList.remove('button-animation');
     }, 2000);
 }
@@ -54,8 +56,8 @@ function getRandomIndex(array) {
 function show(element) {
     element.classList.remove('hidden');
     element.animate([
-        { color: 'white'},
-        { color: 'black'}
+        { color: 'white' },
+        { color: 'black' }
     ], {
         duration: 8000,
     });
